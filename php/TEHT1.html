@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  <html>
+   <head>
+    <meta charset="UTF-8">
+
+<style>
+.button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+</style>
+   </head>
+   
+  <body>
+
+  <p id="testi1"> tämä teksti vaihtuu </p>
+  
+  <button class="button button1" onclick="omaOhjelma1()">Vaihda teksti painamalla</button>
+   <button class="button button2" onclick="omaOhjelma2()">Vaihda teksti painamalla</button>
+
+<p id="testi2"> tämä teksti vaihtuu </p>
+
+  <script>
+   function omaOhjelma1() {
+     document.getElementById("testi1").innerHTML = "teksti vaihtui";
+   }
+    function omaOhjelma2() {
+     document.getElementById("testi2").innerHTML = "teksti vaihtui";
+   }
+  </script>
+
+  </body>
+  </html>
